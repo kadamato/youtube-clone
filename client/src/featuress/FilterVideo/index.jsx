@@ -11,9 +11,8 @@ export default function FilterVideo() {
     dispatch(getVideoByCategory(category));
   };
 
-  const activeCategory = (category) => {
+  const activeCategory = (category) =>
     selectingCategory === category ? "tag--highlight" : "";
-  };
 
   return [
     {

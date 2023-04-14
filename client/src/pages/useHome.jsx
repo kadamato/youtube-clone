@@ -1,47 +1,54 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
+
+
+import VideoCategory from "../components/VideoCategory/VideoCategory";
+import LoadingCategory from "../components/LoadingCategory/LoadingCategory";
 
 import FilterVideo from "../featuress/FilterVideo";
-import VideoCategory from "../components/VideoCategory/VideoCategory";
+import StandardVideo from "../components/StandardVideo/StandardVideo";
 
 export default function useHome() {
-  const [{ clickCategory, activeCategory }, filterVideoState] = FilterVideo();
+    const [{clickCategory, activeCategory}, filterVideoState] = FilterVideo();
+    const {videos, loading, error} = filterVideoState;
 
-  const { data: videos, loading, error } = filterVideoState;
+    const [categories, setCategories] = useState([
+        "all",
+        "music",
+        "gaming",
+        "live stream",
+        "hardware",
+        "software",
+    ]);
 
-  const [categories, setCategories] = useState([
-    "all",
-    "music",
-    "gaming",
-    "live stream",
-    "hardware",
-    "software",
-  ]);
 
-  const displayCategories = () => {
-    categories.map((category) => (
-      <VideoCategory
-        key={category}
-        name={category}
-        clickCategory={clickCategory}
-        activeCategory={activeCategory}
-      />
-    ));
-  };
+    const displayCategories = () => {
+        categories.map((category) => {
+                return <VideoCategory
+                    key={category}
+                    name={category}
+                    clickCategory={clickCategory}
+                    activeCategory={activeCategory}
+                />
+            }
+        );
+    };
 
-  const displayVideos = () => {
-    videos.length > 0
-      ? videos.map((video) => <Video key={video._id} video={video} />)
-      : "there aren't any videos";
-  };
 
-  const displayLoadingCategory = () => (loading ? <LoadingCategory /> : "");
+    const displayVideos = () => {
+        const result = videos.length > 0
+            ? videos.map((video) => <StandardVideo key={video._id} video={video}/>)
+            : "there aren't any videos";
+        return result;
+    };
 
-  const displayError = () => (error ? <div> error </div> : "");
+    const displayLoadingCategory = () => (loading ? <LoadingCategory/> : "");
 
-  return {
-    displayCategories,
-    displayVideos,
-    displayLoadingCategory,
-    displayError,
-  };
+    const displayError = () => (error ? <div> error </div> : "");
+
+    return {
+        displayCategories,
+        displayVideos,
+        displayLoadingCategory,
+        displayError,
+    };
 }

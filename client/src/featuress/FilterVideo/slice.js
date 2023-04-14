@@ -2,7 +2,7 @@ import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 
 import {YoutubeClone} from "../../lib/apis";
 
-//  action creator asynchronous get video folbylow category
+//  action creator asynchronous get video by category
 const getVideoByCategory = createAsyncThunk(
     "app/filterVideo",
     async (data, {dispatch}) => {

@@ -14,14 +14,16 @@ export default function VideoCategory({ name, clickCategory, activeCategory }) {
   );
 }
 
-Category.propTypes = {
+VideoCategory.propTypes = {
   name: PropTypes.string,
   clickCategory: PropTypes.func,
   activeCategory: PropTypes.func,
 };
 
-Category.defaultProps = {
+VideoCategory.defaultProps = {
   name: "none",
-  clickCategory: () => {},
-  activeCategory: () => {},
+  clickCategory: () => {
+  },
+  activeCategory: () => {
+  },
 };
