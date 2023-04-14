@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+}
+
+.sideBar__wall {
+  width: 18%;
+  background-color: white;
+}

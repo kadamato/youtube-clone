@@ -1,0 +1,30 @@
+.hashTag {
+  width: 82%;
+}
+
+.hashTag__name {
+  padding: 3rem 0 1rem 2rem;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.hashTag__viewsAndChannels {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: rgb(96, 96, 96);
+  padding: 0 0 0 2rem;
+}
+
+.hashTag__categories {
+  padding: 4rem 1.4rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.hashTag__videos {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

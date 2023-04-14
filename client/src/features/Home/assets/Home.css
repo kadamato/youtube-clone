@@ -1,0 +1,42 @@
+.home {
+  padding: 0 2rem;
+  width: 82%;
+  position: relative;
+}
+
+.home__category {
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  height: 6rem;
+  width: 108rem;
+  overflow-x: hidden;
+}
+
+.home__category__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home__category__arrow:hover {
+  background-color: rgb(228, 228, 228);
+  border-radius: 3rem;
+}
+
+.home__category__tags {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.videoList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.wall-row-category {
+  height: 6rem;
+}

@@ -1,0 +1,26 @@
+.verify {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.verify__icon {
+  width: 1.3rem;
+}
+
+.verify__description {
+  position: absolute;
+  top: -5rem;
+  left: -2.5rem;
+  z-index: 1;
+  color: white;
+  display: none;
+  background-color: rgba(77, 77, 77, 0.8);
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.verify:hover .verify__description {
+  display: block;
+}

@@ -1,0 +1,6 @@
+.arrow {
+  cursor: pointer;
+  border-radius: 3rem;
+  padding: 1rem;
+  -moz-box-sizing: border-box;
+}
