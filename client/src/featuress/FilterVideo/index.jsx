@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import { getVideoByCategory, videoFilterSelector } from "./slice";
 
-export default function FilterVideo() {
+export default function VideoFilterFeature() {
   const dispatch = useDispatch();
-  const filterVideoState = useSelector(videoFilterSelector);
+  const videoFilterState = useSelector(videoFilterSelector);
 
-  const { selectingCategory } = filterVideoState;
+  const {selectingCategory} = videoFilterState;
 
   const clickCategory = (category) => {
     dispatch(getVideoByCategory(category));
@@ -19,6 +19,6 @@ export default function FilterVideo() {
       clickCategory,
       activeCategory,
     },
-    filterVideoState,
+    videoFilterState,
   ];
 }

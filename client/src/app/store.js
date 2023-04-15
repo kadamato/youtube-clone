@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import videoFilterSlice from "../common/state/videoFilterSlice";
 import watchVideoSlice from "../features/WatchVideo/state/watchVideoSlice";
+
+
+import videoFilterSlice from "../featuress/FilterVideo/slice";
 
 const reducer = {
   videoFilter: videoFilterSlice,

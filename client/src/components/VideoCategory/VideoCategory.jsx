@@ -1,29 +1,30 @@
-import React from "react";
 import PropTypes from "prop-types";
+
+import React from "react";
 
 import "./VideoCategory.css";
 
-export default function VideoCategory({ name, clickCategory, activeCategory }) {
-  return (
-    <div
-      className={`videoCategory ${activeCategory(name)}`}
-      onClick={() => clickCategory(name)}
-    >
-      {name}
-    </div>
-  );
+export default function VideoCategory({name, clickCategory, activeCategory}) {
+    return (
+        <div
+            className={`videoCategory ${activeCategory(name)}`}
+            onClick={() => clickCategory(name)}
+        >
+            {name}
+        </div>
+    );
 }
 
 VideoCategory.propTypes = {
-  name: PropTypes.string,
-  clickCategory: PropTypes.func,
-  activeCategory: PropTypes.func,
+    name: PropTypes.string,
+    clickCategory: PropTypes.func,
+    activeCategory: PropTypes.func,
 };
 
 VideoCategory.defaultProps = {
-  name: "none",
-  clickCategory: () => {
-  },
-  activeCategory: () => {
-  },
+    name: "none",
+    clickCategory: () => {
+    },
+    activeCategory: () => {
+    },
 };
