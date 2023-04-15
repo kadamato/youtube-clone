@@ -1,8 +1,10 @@
 > Define:
 > Feature return an array contain 2 objects
 
-+ First objects contain 2 function
-  + clickCategory (categoryName) : categoryName is a string
++ First objects contain 2 functions
+  + clickCategory (categoryName) : 
+    + categoryName is a string
+    + is async function call api
   + activeCategory(categoryName) : categoryName is a string
 
 + Second object contain 4 states
