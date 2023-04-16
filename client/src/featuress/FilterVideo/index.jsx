@@ -1,24 +1,34 @@
-import { useDispatch, useSelector } from "react-redux";
-import { getVideoByCategory, videoFilterSelector } from "./slice";
+import {useDispatch, useSelector} from "react-redux";
 
-export default function VideoFilterFeature() {
-  const dispatch = useDispatch();
-  const videoFilterState = useSelector(videoFilterSelector);
+import {useEffect} from "react";
 
-  const {selectingCategory} = videoFilterState;
+import {videoFilterSelector, getVideoByCategory, saveCategory} from "./slice";
 
-  const clickCategory = (category) => {
-    dispatch(getVideoByCategory(category));
-  };
+export default function VideoFilterByCategoryFeature() {
+    const dispatch = useDispatch();
+    const videoFilterState = useSelector(videoFilterSelector);
 
-  const activeCategory = (category) =>
-    selectingCategory === category ? "tag--highlight" : "";
+    const {selectingCategory} = videoFilterState;
 
-  return [
-    {
-      clickCategory,
-      activeCategory,
-    },
-    videoFilterState,
-  ];
+
+    useEffect(() => {
+        dispatch(getVideoByCategory(selectingCategory));
+    }, [selectingCategory]);
+
+
+    const clickCategory = (category) => dispatch(saveCategory(category));
+
+
+    const activeCategory = (category, styles = {}) => {
+        if (selectingCategory === category) return styles
+    };
+
+    return [
+        {
+            clickCategory,
+            activeCategory,
+        },
+        videoFilterState,
+    ];
 }
+

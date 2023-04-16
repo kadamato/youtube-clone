@@ -1,43 +1,33 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 
 import VideoCategory from "../components/VideoCategory/VideoCategory";
 import LoadingCategory from "../components/LoadingCategory/LoadingCategory";
 import StandardVideo from "../components/StandardVideo/StandardVideo";
 
-import VideoFilterFeature from "../featuress/FilterVideo";
-
+import VideoFilterByCategoryFeature from "../featuress/FilterVideo";
 
 export default function useHome() {
-    const [{clickCategory, activeCategory}, filterVideoState] = VideoFilterFeature();
+    const [{clickCategory, activeCategory}, filterVideoState] = VideoFilterByCategoryFeature();
     const {videos, loading, error} = filterVideoState;
 
-    const [categories, setCategories] = useState(
-        ["all", "music", "gaming", "live stream", "hardware", "software"]
-    );
+    const [categories, setCategories] = useState(["all", "music", "gaming", "live stream", "hardware", "software"]);
 
 
     const displayCategories = () => {
-        return categories.map((category) =>
-            <VideoCategory
-                key={category}
-                name={category}
-                clickCategory={clickCategory}
-                activeCategory={activeCategory}
-            />
-        );
+        return categories.map((categoryName) => <VideoCategory
+            key={categoryName}
+            name={categoryName}
+            clickCategory={() => clickCategory(categoryName)}
+            activeCategory={activeCategory(categoryName, {backgroundColor: "black", color: "white"})}
+        />);
     };
 
-
-
     const displayVideos = () => {
-        const result =
-            videos.length < 1 ? "there aren't any video" :
-                videos.map((video) => <StandardVideo
-                    key={video._id}
-                    video={video}
-                />)
-        return result;
+        return videos.length < 1 ? "there aren't any video" : videos.map((video) => <StandardVideo
+            key={video._id}
+            video={video}
+        />)
     }
 
     const displayLoadingCategory = () => (loading ? <LoadingCategory/> : "");
@@ -46,9 +36,6 @@ export default function useHome() {
 
 
     return {
-        displayCategories,
-        displayVideos,
-        displayLoadingCategory,
-        displayError,
+        displayCategories, displayVideos, displayLoadingCategory, displayError,
     };
 }
