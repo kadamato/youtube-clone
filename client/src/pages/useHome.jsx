@@ -19,7 +19,7 @@ export default function useHome() {
             key={categoryName}
             name={categoryName}
             clickCategory={() => clickCategory(categoryName)}
-            activeCategory={activeCategory(categoryName, {backgroundColor: "black", color: "white"})}
+            activeCategory={activeCategory(categoryName)}
         />);
     };
 

@@ -3,7 +3,7 @@ import {YoutubeClone} from "../../lib/apis";
 
 //  action creator asynchronous get video by category
 const getVideoByCategory = createAsyncThunk(
-    "app/filterVideo",
+    "videoFilter/getVideoByCategory",
     async (data, thunkAPI) => {
         try {
             const resp = await YoutubeClone.get(data);
@@ -17,7 +17,7 @@ const getVideoByCategory = createAsyncThunk(
 
 
 const videoFilterSlice = createSlice({
-    name: "app",
+    name: "videoFilter",
     initialState: {
         videos: [],
         loading: null,

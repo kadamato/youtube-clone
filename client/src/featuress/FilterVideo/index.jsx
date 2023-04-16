@@ -16,10 +16,16 @@ export default function VideoFilterByCategoryFeature() {
     }, [selectingCategory]);
 
 
-    const clickCategory = (category) => dispatch(saveCategory(category));
+    const clickCategory = (category) => {
+        const a = dispatch(saveCategory(category));
+        console.log(a);
+    }
 
 
-    const activeCategory = (category, styles = {}) => {
+    const activeCategory = (category, styles = {
+        backgroundColor: "black",
+        color: "white",
+    }) => {
         if (selectingCategory === category) return styles
     };
 
