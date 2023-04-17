@@ -1,6 +1,6 @@
 Feature return 2 objects, first is the actions and the second is the state
 
-The clickCategory function is the action to change the category
+1.The clickCategory function is the action to change the category
 > Parameters
 
 + receive parameter is a string
@@ -9,7 +9,7 @@ The clickCategory function is the action to change the category
 
 + no data return
 
-The activeCategory function use to apply a style if the category is active
+2.The activeCategory function use to apply a style if the category is active
 
 > Paremeters
 
