@@ -14,8 +14,8 @@ The activeCategory function use to apply a style if the category is active
 > Paremeters
 
 + receive first parameter is a string
-    + receive second parameter is an object with the style to apply if the category is active . Default is
-      `{color: 'white', background: 'black'}`
++ receive second parameter is an object with the style to apply if the category is active . Default is
+  `{color: 'white', background: 'black'}`
 
 > Return
 
