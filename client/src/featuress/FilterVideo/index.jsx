@@ -17,8 +17,7 @@ export default function VideoFilterByCategoryFeature() {
 
 
     const clickCategory = (category) => {
-        const a = dispatch(saveCategory(category));
-        console.log(a);
+        dispatch(saveCategory(category));
     }
 
 
@@ -37,4 +36,5 @@ export default function VideoFilterByCategoryFeature() {
         videoFilterState,
     ];
 }
+
 
