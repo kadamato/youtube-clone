@@ -26,14 +26,14 @@ _**Feature return 2 objects, first is the actions and the second is the state_**
 
 + return an object containing the style to apply
 
-### **Second object is an object contain 4 states with property default**
+#### **Second object is an object contain 4 states with property default**
 
-{
+`{
   videos:[],
   loading : null, 
   error :null, 
   selectingCategory : "all"
-}
+}`
 
 ### **Example**
 
