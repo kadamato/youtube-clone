@@ -1,6 +1,6 @@
 ### **Define**
 
-_**Feature return 2 objects, first is the actions and the second is the state_**
+_**Feature return 2 objects, first is the actions and the second is the state**_
 
 
 #### **First objects is an object with 2 functions**
