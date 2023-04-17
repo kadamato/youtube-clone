@@ -1,7 +1,9 @@
-Feature return 2 objects, first is the actions and the second is the state**
+### **Define**
+
+_**Feature return 2 objects, first is the actions and the second is the state_**
 
 
-#### **Define**
+#### **First objects is an object with 2 functions**
 
 1.The clickCategory function is the action to change the category
 > Parameters
@@ -24,7 +26,9 @@ Feature return 2 objects, first is the actions and the second is the state**
 
 + return an object containing the style to apply
 
-#### **Example**
+#### **Second object is an object contain 4 states**
+
+### **Example**
 
 `const [{clickCategory, activeCategory} , videoFilterState] = VideoFilterFeature();`
 
