@@ -1,6 +1,6 @@
 ### **Define**
 
-**Note : this feature get video by category**
+**Note : This feature will call an api to get video by category**
 
 
 _**Feature return 2 objects, first is the actions and the second is the state**_
