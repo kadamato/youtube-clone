@@ -1,5 +1,8 @@
 ### **Define**
 
+**Note : this feature get video by category**
+
+
 _**Feature return 2 objects, first is the actions and the second is the state**_
 
 
@@ -18,7 +21,7 @@ _**Feature return 2 objects, first is the actions and the second is the state**_
 
 > Paremeters
 
-+ receive first parameter is a categoryName string  
++ receive first parameter is a categoryName string
 + [options] receive second parameter is an object with the style to apply if the category is active . Default is
   `{color: 'white', background: 'black'}`
 
@@ -29,10 +32,10 @@ _**Feature return 2 objects, first is the actions and the second is the state**_
 #### **Second object is an object contain 4 states with property default**
 
 `{
-  videos:[],
-  loading : null, 
-  error :null, 
-  selectingCategory : "all"
+videos:[],
+loading : null,
+error :null,
+selectingCategory : "all"
 }`
 
 ### **Example**
