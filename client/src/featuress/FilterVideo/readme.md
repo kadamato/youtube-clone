@@ -1,9 +1,9 @@
 ### **Define**
 
-**Note : This feature will call an api to get video by category**
+#### _**Note : This feature will call an api to get video by category**_
 
 
-_**Feature return 2 objects, first is the actions and the second is the state**_
+#### **Feature return 2 objects, first is the actions and the second is the state**
 
 
 #### **First objects is an object with 2 functions**
@@ -15,7 +15,7 @@ _**Feature return 2 objects, first is the actions and the second is the state**_
 
 > Return
 
-+ no data return
++ an object with type and payload
 
 2.The activeCategory function use to apply a style if the category is active
 
@@ -44,7 +44,10 @@ selectingCategory : "all"
 
 `<ComponentTest
 name = {categoryName}
-clickCategory={() => clickCategory(categoryName)}
-activeCategory={activeCategory(categoryName, {color: 'red'}
+onClick={() => clickCategory(categoryName)}
+style={activeCategory(categoryName)}
 />`
 
+
+
+update feature in future : need options config url to call api

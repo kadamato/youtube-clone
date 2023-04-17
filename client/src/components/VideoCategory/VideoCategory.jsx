@@ -4,12 +4,12 @@ import React from "react";
 
 import "./VideoCategory.css";
 
-export default function VideoCategory({name, clickCategory, activeCategory}) {
+export default function VideoCategory(props) {
+    const { name } = props;
     return (
         <div
             className="videoCategory"
-            onClick={clickCategory}
-            style={activeCategory}
+            {...props}
         >
             {name}
         </div>
@@ -18,13 +18,8 @@ export default function VideoCategory({name, clickCategory, activeCategory}) {
 
 VideoCategory.propTypes = {
     name: PropTypes.string,
-    clickCategory: PropTypes.func,
-    activeCategory: PropTypes.object,
 };
 
 VideoCategory.defaultProps = {
     name: "none",
-    clickCategory: () => {
-    },
-    activeCategory: {}
 };

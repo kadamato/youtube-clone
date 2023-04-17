@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const SignInButton = ({ handleSignIn }) => {
+import "./SignInButton.css"
+
+export const SignInButton = () => {
   return (
-    <div className="signInButton" onClick={handleSignIn}>
+    <div className="signInButton" >
       <img
         src="/images/user-icon.svg"
         alt="user-icon"
@@ -14,10 +16,3 @@ export const SignInButton = ({ handleSignIn }) => {
   );
 };
 
-SignInButton.propTypes = {
-  handleSignIn: PropTypes.func,
-};
-
-SignInButton.defaultProps = {
-  handleSignIn: () => {},
-};

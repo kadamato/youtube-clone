@@ -1,11 +1,14 @@
+import PropTypes from "prop-types";
+
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { SignInButton } from "../components/SignInButton";
+
+import {SignInButton} from "../SignInButton/SignInButton";
 
 import "./Header.css";
 
-export default function Header() {
+export default function Header({authenticationWithGoogle}) {
   return (
     <div>
       <div className="header">
@@ -44,11 +47,20 @@ export default function Header() {
             />
           </div>
 
-          <SignInButton />
+          <SignInButton onClick={authenticationWithGoogle} />
         </div>
       </div>
       {/*   use display: fixed so this element use to normal display */}
       <div className="header__wall"></div>
     </div>
   );
+}
+
+
+Header.propTypes = {
+  authenticationWithGoogle : PropTypes.func
+}
+
+Header.defaultProps = {
+  authenticationWithGoogle : () => {}
 }

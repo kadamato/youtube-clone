@@ -1,8 +1,8 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 
-// import Home from "../features/Home";
-import RootLayout from "../layouts/RootLayout";
+
+import MainLayout from "../layouts/MainLayout/MainLayout";
 import WatchVideoLayout from "../layouts/WatchVideoLayout";
 import PageNotFound from "../common/components/PageNotFound";
 import HashTag from "../features/HashTag";
@@ -14,7 +14,7 @@ import Home from "../pages/Home";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: <MainLayout />,
     children: [
       // home
       {

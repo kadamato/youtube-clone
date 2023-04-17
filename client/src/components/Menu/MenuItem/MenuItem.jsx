@@ -19,7 +19,7 @@ MenuItem.propTypes = {
   path: PropTypes.string,
 };
 
-Feature.defaultProps = {
+MenuItem.defaultProps = {
   name: "none",
   iconPath: "",
   path: "/",
