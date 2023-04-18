@@ -13,7 +13,6 @@ export default function useHome() {
 
     const [categories, setCategories] = useState(["all", "music", "gaming", "live stream", "hardware", "software"]);
 
-
     const displayCategories = () => {
         return categories.map((categoryName) =>
             <VideoCategory
@@ -35,7 +34,6 @@ export default function useHome() {
     const displayLoadingCategory = () => (loading ? <LoadingCategory/> : "");
 
     const displayError = () => (error ? <div> error </div> : "");
-
 
     return {
         displayCategories, displayVideos, displayLoadingCategory, displayError,

@@ -15,9 +15,9 @@ export default function MainLayout() {
   return (
     <>
       <Header authenticationWithGoogle = {authenticationWithGoogle}/>
-      <div className="main">
+      <div className="mainLayout">
         <Menu />
-        <div className="sideBar__wall"></div>
+        <div className="menu__wall"></div>
         <Outlet />
       </div>
     </>

@@ -2,9 +2,7 @@
 
 #### _**Note : This feature will call an api to get video by category**_
 
-
 #### **Feature return 2 objects, first is the actions and the second is the state**
-
 
 #### **First objects is an object with 2 functions**
 
@@ -47,7 +45,6 @@ name = {categoryName}
 onClick={() => clickCategory(categoryName)}
 style={activeCategory(categoryName)}
 />`
-
 
 
 update feature in future : need options config url to call api

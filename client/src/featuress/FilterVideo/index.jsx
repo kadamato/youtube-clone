@@ -10,16 +10,13 @@ export default function VideoFilterByCategoryFeature() {
 
     const {selectingCategory} = videoFilterState;
 
-
     useEffect(() => {
         dispatch(getVideoByCategory(selectingCategory));
     }, [selectingCategory]);
 
-
     const clickCategory = (category) => {
         dispatch(saveCategory(category));
     }
-
 
     const activeCategory = (category, styles = {
         backgroundColor: "black",

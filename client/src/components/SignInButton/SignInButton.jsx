@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 
 import "./SignInButton.css"
 
-export const SignInButton = () => {
+export const SignInButton = (props) => {
   return (
-    <div className="signInButton" >
+    <div className="signInButton"
+         {...props}
+    >
       <img
         src="/images/user-icon.svg"
         alt="user-icon"

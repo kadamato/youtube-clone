@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useRouteError } from "react-router-dom";
 
-export default function UnAvailableVideo() {
+import "./UnavailableVideo.css";
+
+export default function UnavailableVideo() {
   const error = useRouteError();
   const {
     response: { data },

@@ -1,50 +1,49 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 
 
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import WatchVideoLayout from "../layouts/WatchVideoLayout";
-import PageNotFound from "../common/components/PageNotFound";
 import HashTag from "../features/HashTag";
-import { videoLoader } from "../loaders/videoLoader";
-import FindVideoError from "../common/components/FindVideoError";
+import {videoLoader} from "../loaders/videoLoader";
 
 import Home from "../pages/Home";
+import UnAvailablePage from "../components/UnAvailablePage/UnavailablePage";
+import UnavailableVideo from "../components/UnAvaiableVideo/UnavailableVideo";
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      // home
-      {
-        path: "",
-        element: <Home />,
-      },
+    {
+        path: "/",
+        element: <MainLayout/>,
+        children: [
+            // home
+            {
+                path: "",
+                element: <Home/>
+            },
 
-      // short video
-      {
-        path: "short",
-        element: <div> short video </div>,
-      },
+            // short video
+            {
+                path: "short",
+                element: <div> short video </div>,
+            },
 
-      // hashtag
+            // hashtag
 
-      {
-        path: "hashtag/:hashTagName",
-
-        element: <HashTag />,
-      },
-    ],
-  },
-  {
-    path: "/videos",
-    element: <WatchVideoLayout />,
-    loader: videoLoader,
-    errorElement: <FindVideoError />,
-  },
-  {
-    path: "*",
-    element: <PageNotFound />,
-  },
+            {
+                path: "hashtag/:hashTagName",
+                element: <HashTag/>,
+            },
+        ],
+    },
+    {
+        path: "/videos",
+        element: <WatchVideoLayout/>,
+        loader: videoLoader,
+        errorElement: <UnavailableVideo/>,
+    },
+    {
+        path: "*",
+        element: <UnAvailablePage/>,
+    },
 ]);

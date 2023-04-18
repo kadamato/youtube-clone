@@ -1,8 +1,8 @@
-.main {
+.mainLayout {
     display: flex;
 }
 
-.sideBar__wall {
+.menu__wall {
     width: 18%;
     background-color: white;
 }

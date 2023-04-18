@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../assets/css/PageNotFound.css";
+
+import "./UnavailablePage.css";
 
 export default function UnAvailablePage() {
   return (
