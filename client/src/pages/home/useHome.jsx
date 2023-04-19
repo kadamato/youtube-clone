@@ -15,12 +15,12 @@ export default function useHome() {
 
     const displayCategories = () => {
         return categories.map((categoryName) =>
-            <VideoCategory
-                key={categoryName}
-                name={categoryName}
-                onClick={() => clickCategory(categoryName)}
-                style={activeCategory(categoryName)}
-            />
+                <VideoCategory
+                    key={categoryName}
+                    name={categoryName}
+                    onClick={() => clickCategory(categoryName)}
+                    style={activeCategory(categoryName)}
+                />
         )
     };
 

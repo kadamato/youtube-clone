@@ -10,6 +10,8 @@ import Home from "../pages/home/Home";
 import UnAvailablePage from "../components/UnAvailablePage/UnavailablePage";
 import UnavailableVideo from "../components/UnAvaiableVideo/UnavailableVideo";
 
+import WatchVideo from "../pages/watchVideo/watchVideo";
+
 
 export const router = createBrowserRouter([
     {
@@ -36,12 +38,14 @@ export const router = createBrowserRouter([
             // },
         ],
     },
-    // {
-    //     path: "/videos",
-    //     element: <WatchVideoLayout/>,
-    //     loader: videoLoader,
-    //     errorElement: <UnavailableVideo/>,
-    // },
+    {
+        path: "/videos",
+        element: <WatchVideoLayout/>,
+        errorElement: <UnavailableVideo/>,
+        children :[{
+            element: <WatchVideo/>
+        }]
+    },
     {
         path: "*",
         element: <UnAvailablePage/>,
