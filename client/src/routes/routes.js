@@ -4,12 +4,12 @@ import {createBrowserRouter} from "react-router-dom";
 
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import WatchVideoLayout from "../layouts/WatchVideoLayout";
-import HashTag from "../features/HashTag";
 import {videoLoader} from "../loaders/videoLoader";
 
-import Home from "../pages/Home";
+import Home from "../pages/home/Home";
 import UnAvailablePage from "../components/UnAvailablePage/UnavailablePage";
 import UnavailableVideo from "../components/UnAvaiableVideo/UnavailableVideo";
+
 
 export const router = createBrowserRouter([
     {
@@ -30,18 +30,18 @@ export const router = createBrowserRouter([
 
             // hashtag
 
-            {
-                path: "hashtag/:hashTagName",
-                element: <HashTag/>,
-            },
+            // {
+            //     path: "hashtag/:hashTagName",
+            //     element: <HashTag/>,
+            // },
         ],
     },
-    {
-        path: "/videos",
-        element: <WatchVideoLayout/>,
-        loader: videoLoader,
-        errorElement: <UnavailableVideo/>,
-    },
+    // {
+    //     path: "/videos",
+    //     element: <WatchVideoLayout/>,
+    //     loader: videoLoader,
+    //     errorElement: <UnavailableVideo/>,
+    // },
     {
         path: "*",
         element: <UnAvailablePage/>,

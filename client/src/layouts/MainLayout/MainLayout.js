@@ -7,7 +7,7 @@ import Header from "../../components/Header/Header";
 
 import "./MainLayout.css";
 import Menu from "../../components/Menu/Menu";
-import UserAuthenticationFeature from "../../featuress/Authentication";
+import UserAuthenticationFeature from "../../featuress/authentication";
 
 
 export default function MainLayout() {

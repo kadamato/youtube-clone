@@ -2,7 +2,6 @@ import useHome from "./useHome";
 
 import "./Home.css";
 
-
 export default function Home() {
     const {
         displayCategories,

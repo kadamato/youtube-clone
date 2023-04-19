@@ -6,7 +6,7 @@ const getVideoByCategory = createAsyncThunk(
     "videoFilter/getVideoByCategory",
     async (data, thunkAPI) => {
         try {
-            const resp = await YoutubeClone.get(data);
+            const resp = await YoutubeClone.get(`videos?category=${data}`);
             if (resp.status === 200) return resp.data.videos;
             throw resp;
         } catch (err) {

@@ -1,11 +1,11 @@
 import {useState} from "react";
 
 
-import VideoCategory from "../components/VideoCategory/VideoCategory";
-import LoadingCategory from "../components/LoadingCategory/LoadingCategory";
-import StandardVideo from "../components/StandardVideo/StandardVideo";
+import VideoCategory from "../../components/VideoCategory/VideoCategory";
+import LoadingCategory from "../../components/LoadingCategory/LoadingCategory";
+import StandardVideo from "../../components/StandardVideo/StandardVideo";
 
-import VideoFilterByCategoryFeature from "../featuress/FilterVideo";
+import VideoFilterByCategoryFeature from "../../featuress/filterVideo";
 
 export default function useHome() {
     const [{clickCategory, activeCategory}, filterVideoState] = VideoFilterByCategoryFeature();
