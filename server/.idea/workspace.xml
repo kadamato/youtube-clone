@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/featuress/Authentication/auth-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/featuress/authentication/auth-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/featuress/Authentication/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/featuress/authentication/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/featuress/FilterVideo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/featuress/filterVideo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/featuress/FilterVideo/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/featuress/filterVideo/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/featuress/FilterVideo/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/featuress/filterVideo/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelInfo/ChannelInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelInfo/ChannelInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/JoinMemberButton/JoinMemberButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/JoinMemberButton/JoinMemberButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/useHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/watchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/videoCreated.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/videoCreated.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/web/client",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +65,9 @@
       <workItem from="1681398486204" duration="281000" />
       <workItem from="1681787632829" duration="692000" />
       <workItem from="1681823391510" duration="7862000" />
+      <workItem from="1681913688672" duration="1072000" />
+      <workItem from="1681916574768" duration="1835000" />
+      <workItem from="1681990711564" duration="581000" />
     </task>
     <servers />
   </component>

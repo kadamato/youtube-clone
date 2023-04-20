@@ -4,13 +4,9 @@ import {createBrowserRouter} from "react-router-dom";
 
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import WatchVideoLayout from "../layouts/WatchVideoLayout";
-import {videoLoader} from "../loaders/videoLoader";
-
-import Home from "../pages/home/Home";
 import UnAvailablePage from "../components/UnAvailablePage/UnavailablePage";
-import UnavailableVideo from "../components/UnAvaiableVideo/UnavailableVideo";
-
-import WatchVideo from "../pages/watchVideo/watchVideo";
+import WatchVideo from "../pages/watchVideo/WatchVideo";
+import Home from "../pages/home/Home";
 
 
 export const router = createBrowserRouter([
@@ -41,8 +37,8 @@ export const router = createBrowserRouter([
     {
         path: "/videos",
         element: <WatchVideoLayout/>,
-        errorElement: <UnavailableVideo/>,
         children :[{
+            path: "",
             element: <WatchVideo/>
         }]
     },

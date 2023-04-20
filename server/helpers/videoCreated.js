@@ -43,52 +43,7 @@ function months() {
 
 function convertToCompleteTime(timePassed) {
 
-    let convertedTime = {
-        time: null,
-        description: null
-    };
-
-    if (timePassed < LIMIT_SECONDS) {
-        convertedTime = {
-            time: `${timePassed / 1000}`,
-            description: "second"
-        }
-    } else if (timePassed < LIMIT_MINUTES) {
-        convertedTime = {
-            time: `${timePassed / 1000 / 60}`,
-            description: "minute"
-        }
-    } else if (timePassed < LIMIT_HOURS) {
-        convertedTime = {
-            time: `${timePassed / 1000 / 60 / 60} `,
-            description: "hour"
-        }
-    } else if (timePassed < LIMIT_DAYS) {
-
-        convertedTime = {
-            time: `${timePassed / 1000 / 60 / 60 / 24} `,
-            description: "day"
-        }
-    } else if (timePassed < LIMIT_MONTHS) {
-        convertedTime = {
-            time: `${timePassed / 1000 / 60 / 60 / 24 / daysInMonth()} `,
-            description: "month"
-        }
-    } else {
-        convertedTime = {
-            time: `${timePassed / 1000 / 60 / 60 / 24 / daysInYear()}`,
-            description: "year"
-        }
-    }
-
-    const completeTime = Math.floor(convertedTime.time);
-
-    const completeDescription = completeTime > 1 ? `${convertedTime.description}s` : convertedTime.description;
-
-    return `${completeTime} ${completeDescription} ago`;
-
-
-}
+ }
 
 const videoCreatedAbout = (time) => {
     const initialTimeVideo = convertToMilliseconds(time, "Asia/Ho_Chi_Minh");

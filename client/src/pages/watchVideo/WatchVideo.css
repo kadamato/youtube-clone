@@ -1,0 +1,9 @@
+.watchVideo {
+    max-width: 75%;
+    border: .1rem solid black;
+    margin: 3rem auto;
+}
+.watchVideo__container__title {
+    margin: 1.5rem 0 0;
+    font-size: 2.4rem;
+}
