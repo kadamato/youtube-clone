@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelInfo/ChannelInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelInfo/ChannelInfo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/JoinMemberButton/JoinMemberButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/JoinMemberButton/JoinMemberButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/watchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/videoCreated.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/videoCreated.js" afterDir="false" />
     </list>
@@ -68,6 +56,7 @@
       <workItem from="1681913688672" duration="1072000" />
       <workItem from="1681916574768" duration="1835000" />
       <workItem from="1681990711564" duration="581000" />
+      <workItem from="1682133891995" duration="900000" />
     </task>
     <servers />
   </component>

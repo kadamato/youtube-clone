@@ -34,16 +34,55 @@ function daysInYear() {
     return days;
 }
 
-function months() {
-    const currentYear = moment().year();
-    const leapYear = moment([currentYear]).isLeapYear();
-
-    return [31, leapYear ? 29 : 28, 31, 30, 31, 30, 31, 30, 30, 31, 30, 31];
-}
 
 function convertToCompleteTime(timePassed) {
 
- }
+    let convertRealTime = {
+        time: 0,
+        unit: "",
+    };
+    if (timePassed < LIMIT_SECONDS) {
+        convertRealTime =
+            {
+                time: timePassed / 1000,
+                unit: "second",
+            }
+    } else if (timePassed < LIMIT_MINUTES) {
+
+        convertRealTime = {
+            time: timePassed / 1000 / 60,
+            unit: "minute",
+        }
+    } else if (timePassed < LIMIT_HOURS) {
+        convertRealTime = {
+            time: timePassed / 1000 / 60 / 60,
+            unit: "hour",
+        }
+    } else if (timePassed < LIMIT_DAYS) {
+
+        convertRealTime = {
+            time: timePassed / 1000 / 60 / 60 / 24,
+            unit: "day",
+        }
+    } else if (timePassed < LIMIT_MONTHS) {
+        convertRealTime = {
+            time: timePassed / 1000 / 60 / 60 / 24 / daysInMonth(),
+            unit: "month",
+        }
+    } else {
+        convertRealTime =
+            {
+                time: timePassed / 1000 / 60 / 60 / 24 / daysInYear(),
+                unit: "year",
+            }
+    }
+
+    convertRealTime = {
+        ...convertRealTime,
+        time: Math.floor(convertRealTime.time),
+    }
+    return convertRealTime.time > 1 ? `${convertRealTime.time} ${convertRealTime.unit}s ago` : `${convertRealTime.time} ${convertRealTime.unit} ago`
+}
 
 const videoCreatedAbout = (time) => {
     const initialTimeVideo = convertToMilliseconds(time, "Asia/Ho_Chi_Minh");

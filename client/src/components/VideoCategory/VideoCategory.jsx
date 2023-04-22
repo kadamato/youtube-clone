@@ -5,7 +5,7 @@ import React from "react";
 import "./VideoCategory.css";
 
 export default function VideoCategory(props) {
-    const { name } = props;
+    const {name} = props;
     return (
         <div
             className="videoCategory"
