@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="">
+    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/styles/config.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/config.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/videoCreated.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/videoCreated.js" afterDir="false" />
     </list>
@@ -56,11 +65,35 @@
       <workItem from="1681913688672" duration="1072000" />
       <workItem from="1681916574768" duration="1835000" />
       <workItem from="1681990711564" duration="581000" />
-      <workItem from="1682133891995" duration="900000" />
+      <workItem from="1682133891995" duration="1379000" />
+      <workItem from="1682214853400" duration="3749000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1682134822315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682134822315</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

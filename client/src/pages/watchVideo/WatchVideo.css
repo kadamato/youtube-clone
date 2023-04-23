@@ -1,9 +1,103 @@
 .watchVideo {
-    max-width: 75%;
+    max-width: 91%;
     border: .1rem solid black;
     margin: 3rem auto;
+    display: flex;
+    align-items: flex-start;
 }
-.watchVideo__container__title {
-    margin: 1.5rem 0 0;
-    font-size: 2.4rem;
+
+
+.watchVideo__videoInfo {
+    width: 65%;
+}
+
+
+.watchVideo__videoInfo__title {
+    margin: 1.2rem 0 0;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+
+}
+
+.watchVideo__videoInfo__interactVideo {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0;
+    font-size: 1.4rem;
+}
+
+
+/* recommended videos*/
+
+.watchVideo__recommends {
+}
+
+
+/* channel */
+.channel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+
+.channel__info {
+    margin: 0 3rem 0 1.2rem;
+}
+
+.channel__info__name {
+    font-size: 1.5rem;
+}
+
+.channel__info__subscribers {
+    font-size: 1.3rem;
+    color: var(--color-sub-title);
+    padding: .2rem 0 0;
+}
+
+
+.channel__avatar > img {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 3rem;
+    object-fit: cover;
+}
+
+/* emotion button */
+
+.emotionButton {
+    background-color: var(--color-button);
+    border-radius: 3rem;
+    margin: 0 0 0 auto;
+}
+
+.emotionButton, .emotionButton__like, .emotionButton__dislike {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.emotionButton__like {
+    border-right: .1rem solid var(--color-sub-title);
+}
+
+.emotionButton__dislike:hover, .emotionButton__like:hover {
+    background-color: var(--color-sub-title);
+}
+
+
+.emotionButton__like__likers {
+    margin: 0 0 0 1rem;
+    font-weight: bold;
+}
+
+.emotionButton__like__icon, .emotionButton__dislike__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.emotionButton__like__icon > img, .emotionButton__dislike__icon > img {
+    width: 100%;
+    height: 100%;
 }

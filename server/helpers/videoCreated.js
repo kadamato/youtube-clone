@@ -76,12 +76,12 @@ function convertToCompleteTime(timePassed) {
                 unit: "year",
             }
     }
-
     convertRealTime = {
         ...convertRealTime,
-        time: Math.floor(convertRealTime.time),
+        time: Math.floor(convertRealTime.time)
     }
-    return convertRealTime.time > 1 ? `${convertRealTime.time} ${convertRealTime.unit}s ago` : `${convertRealTime.time} ${convertRealTime.unit} ago`
+    const {time, unit} = convertRealTime;
+    return `${time} ${unit}${time > 1 ? "s" : ""} ago`;
 }
 
 const videoCreatedAbout = (time) => {
@@ -94,6 +94,5 @@ const videoCreatedAbout = (time) => {
     return convertToCompleteTime(timePassed);
 };
 
-// timeCreatedVideo("2023-03-02T04:22:37.355Z");
 
 export default videoCreatedAbout;

@@ -1,6 +1,12 @@
 .subscriptionButton {
-    padding: 1rem 1.5rem ;
+    padding: 0.8rem 1.5rem;
     border-radius: 30rem;
     color: white;
     background-color: black;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.subscriptionButton:hover {
+    opacity: 0.8;
 }

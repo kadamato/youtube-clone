@@ -16,6 +16,7 @@ export default function VideoCategory(props) {
     );
 }
 
+
 VideoCategory.propTypes = {
     name: PropTypes.string,
 };
