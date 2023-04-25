@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/public/images/more-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/public/images/more-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/VideoCategory/VideoCategory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/styles/config.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/config.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/videoCreated.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/videoCreated.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +61,9 @@
       <workItem from="1681990711564" duration="581000" />
       <workItem from="1682133891995" duration="1379000" />
       <workItem from="1682214853400" duration="3749000" />
+      <workItem from="1682258584384" duration="778000" />
+      <workItem from="1682299209766" duration="4808000" />
+      <workItem from="1682346290175" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682134822315</created>

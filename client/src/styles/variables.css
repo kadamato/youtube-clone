@@ -1,4 +1,8 @@
 :root {
-    --color-sub-title: #5e5e5e;
-    --color-button: #eaeaea;
+    --color-sub-title: #606060;
+    --color-button: #f1f1f1;
+    --color--button-active: #e1e1e1;
+    --color--sub-text: #b7b7b7;
+    --color-reply-button: rgb(6, 95, 212);
+    --color-highlight-reply-button: #d4f5f4;
 }
