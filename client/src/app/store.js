@@ -1,13 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {configureStore} from "@reduxjs/toolkit";
 
+import videoFilterSlice from "../features/filterVideo/slice";
+import subscribeChannelSlice from "../features/SubscribeChannel/subscribeChannelSlice";
 
-
-import videoFilterSlice from "../featuress/filterVideo/slice";
 
 const reducer = {
-  videoFilter: videoFilterSlice,
+    videoFilter: videoFilterSlice,
+    subscribeChannel: subscribeChannelSlice
 };
 
-const store = configureStore({ reducer });
+const store = configureStore({reducer});
 
 export default store;

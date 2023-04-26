@@ -33,6 +33,7 @@ async function addUserInfoForVideo(videos) {
 }
 
 const videos = async (req, res, next) => {
+
   const { category } = req.query;
   try {
     const videos = await findVideosByCategory(category);

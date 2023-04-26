@@ -18,6 +18,8 @@ const config = {
     clientSecret: process.env.CLIENT_SECRET,
     callBackUrl: "/auth/google/callback",
   },
+
+  secretKey : process.env.SECRET_KEY
 };
 
 export default config;

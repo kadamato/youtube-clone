@@ -5,12 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/../client/public/images/more-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/public/images/more-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelOwner/ChannelOwner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/components/ChannelOwner/ChannelOwner.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/Channel/Channel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/ShareButton/ShareButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/public/images/verify-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/public/images/verify-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/MenuItem/MenuItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/MenuItem/MenuItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/SubscribeButton/SubscriptionButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscriptionButton/SubscriptionButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/SubscribeButton/SubscriptionButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/VerifyIcon/VerifyIcon.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/VerifyIcon/VerifyIcon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/VerifyIcon/VerifyIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/VerifyIcon/VerifyIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/featuress/authentication/auth-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/auth-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/featuress/authentication/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/featuress/filterVideo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/filterVideo/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/featuress/filterVideo/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/filterVideo/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/featuress/filterVideo/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/filterVideo/slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/videos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +69,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -64,6 +92,8 @@
       <workItem from="1682258584384" duration="778000" />
       <workItem from="1682299209766" duration="4808000" />
       <workItem from="1682346290175" duration="2975000" />
+      <workItem from="1682474075113" duration="8635000" />
+      <workItem from="1682509779647" duration="289000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682134822315</created>
