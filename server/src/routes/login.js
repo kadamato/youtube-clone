@@ -6,17 +6,20 @@ import config from "../../config/config.js";
 
 const router = Router();
 
-router.get("/login", (req, res) => {
+router.get("/login/success", (req, res) => {
     if (req.user) {
         const {__v, createdAt, updatedAt, googleId, ...others} = req.user._doc;
 
         const token = jwt.sign({id: req.user._id}, config.secretKey, {
             expiresIn: "1h"
         })
+
+        const newUser = {
+            ...others,
+        }
         res.status(200).json({
-            user: {
-                ...others
-            }, token
+            user: newUser
+            ,token
         });
 
     }
@@ -36,7 +39,7 @@ router.get(
 router.get(
     "/google/callback",
     passport.authenticate("google", {
-        successRedirect: "/auth/login"
+        successRedirect: "http://localhost:1369/",
     })
 );
 

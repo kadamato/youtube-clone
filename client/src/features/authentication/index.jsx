@@ -8,9 +8,8 @@ export default function UserAuthenticationFeature() {
     const authenticationWithGoogle = () => {
         window.open("http://localhost:8000/auth/google", "_self");
     }
-
     useEffect(() => {
-        dispatch(loginRequest())
+        dispatch(loginRequest());
     }, [])
     return {
         authenticationWithGoogle
