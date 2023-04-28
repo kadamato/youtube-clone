@@ -13,13 +13,9 @@ router.get("/login/success", (req, res) => {
         const token = jwt.sign({id: req.user._id}, config.secretKey, {
             expiresIn: "1h"
         })
-
-        const newUser = {
-            ...others,
-        }
         res.status(200).json({
-            user: newUser
-            ,token
+            ...others,
+            token
         });
 
     }

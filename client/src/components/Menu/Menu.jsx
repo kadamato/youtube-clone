@@ -4,7 +4,7 @@ import "./Menu.css";
 
 import useSideBar from "../../hooks/useSideBar";
 
-import {SignInButton} from "../SignInButton/SignInButton";
+import {SignInButton} from "../../features/authentication/SignInButton/SignInButton";
 import MenuItem from "./MenuItem/MenuItem";
 
 export default function Menu() {

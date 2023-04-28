@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 
-import {subscribeChannelRequest, subscribeChannelSelector} from "./subscribeChannelSlice";
+import {subscribeChannelRequest, subscribeChannelSelector} from "./subscribe_channel_slice";
 
 export default function SubscribeChannelFeature() {
     const dispatch = useDispatch();
@@ -9,6 +9,7 @@ export default function SubscribeChannelFeature() {
     const subscribeChannel = (channelId) => {
         dispatch(subscribeChannelRequest(channelId));
     }
+
 
     return [
         subscribeChannel,

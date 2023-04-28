@@ -12,8 +12,7 @@ export const loginRequest = createAsyncThunk("auth/loginRequest", async (data, t
                 "Access-Control-Allow-Credentials": true,
             }
         });
-        console.log(resp.data);
-        if (resp === 200) return resp.data;
+        if (resp.status === 200) return resp.data;
         throw  resp;
     } catch (err) {
         throw  err;
@@ -22,12 +21,13 @@ export const loginRequest = createAsyncThunk("auth/loginRequest", async (data, t
 
 
 const authSlice = createSlice({
-    name: "auth", initialState: {
-        user: {}, loading: false, error: null,
+    name: "auth",
+    initialState: {
+        user: null,
+        loading: true,
+        error: null,
 
     },
-    reducers: {}
-    ,
     extraReducers: {
         [loginRequest.pending]: (state, action) => {
             state.loading = true;
@@ -45,3 +45,4 @@ const authSlice = createSlice({
 
 export default authSlice.reducer;
 
+export const authSelector = (state) => state.auth;

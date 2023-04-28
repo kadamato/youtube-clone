@@ -15,7 +15,7 @@ export const subscribeChannelRequest = createAsyncThunk(
     });
 
 
-export const SubscribeChannelSlice = createSlice({
+export const Subscribe_channel_slice = createSlice({
     name: 'subscribeChannel',
     initialState: {
         subscribeChannel: false,
@@ -41,5 +41,5 @@ export const SubscribeChannelSlice = createSlice({
 })
 
 
-export default SubscribeChannelSlice.reducer;
+export default Subscribe_channel_slice.reducer;
 export const subscribeChannelSelector = state => state.subscribeChannel;

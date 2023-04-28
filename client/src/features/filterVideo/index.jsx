@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {useEffect} from "react";
 
-import {videoFilterSelector, getVideoByCategory, saveCategory} from "./slice";
+import {videoFilterSelector, getVideoByCategory, saveCategory} from "./filterVideo_slice";
 
 export default function VideoFilterByCategoryFeature() {
     const dispatch = useDispatch();

@@ -1,12 +1,14 @@
-import React from "react";
 import PropTypes from "prop-types";
+
+import React from "react";
 
 import "./SignInButton.css"
 
-export const SignInButton = (props) => {
+export const SignInButton = ({authenticationWithGoogle}) => {
+
   return (
     <div className="signInButton"
-         {...props}
+         onClick={authenticationWithGoogle}
     >
       <img
         src="/images/user-icon.svg"
@@ -18,3 +20,12 @@ export const SignInButton = (props) => {
   );
 };
 
+
+
+SignInButton.propsTypes = {
+    authenticationWithGoogle: PropTypes.func
+}
+
+SignInButton.defaultProps = {
+    authenticationWithGoogle: () => {}
+}

@@ -5,7 +5,10 @@ import loginRoute from "./login.js";
 import videoRoute from "./video.js";
 import hashtagRoute from "./hashtag.js";
 
+
 const router = Router();
+
+
 
 // route use find a video or many videos
 router.use("/videos", videosRoute);

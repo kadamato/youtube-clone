@@ -31,6 +31,8 @@ app.use(
         cookie: {maxAge: 86400000},
     })
 );
+
+
 app.use(passport.initialize()); // call in every request , check data in session
 app.use(passport.session());
 
