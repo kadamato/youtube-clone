@@ -1,0 +1,15 @@
+
+.settingButton {
+    position: relative;
+}
+
+.settingButton__user {
+    cursor: pointer;
+}
+
+.settingButton__user__avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 3rem;
+}

@@ -33,15 +33,12 @@ async function addUserInfoForVideo(videos) {
 }
 
 const videos = async (req, res, next) => {
-
   const { category } = req.query;
   try {
     const videos = await findVideosByCategory(category);
     const newVideos = await addUserInfoForVideo(videos);
 
-    setTimeout(() => {
-      return res.status(200).json({ msg: "success", videos: newVideos });
-    }, 1000);
+    return res.status(200).json({ msg: "success", videos: newVideos });
   } catch (err) {
     next(err);
   }

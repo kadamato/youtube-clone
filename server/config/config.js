@@ -5,7 +5,7 @@ dotenv.config({ path: "./config/.env" });
 
 const config = {
   // server run at port
-  port: 8000,
+  port: 9000,
 
   // config db
   db: {
@@ -19,7 +19,7 @@ const config = {
     callBackUrl: "/auth/google/callback",
   },
 
-  secretKey : process.env.SECRET_KEY
+  secretKey: process.env.SECRET_KEY,
 };
 
 export default config;

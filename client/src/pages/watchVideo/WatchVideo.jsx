@@ -1,4 +1,4 @@
-import PlayVideo from "../../components/PlayVideo/PlayVideo";
+import PlayVideo from "./PlayVideo/PlayVideo";
 import Categories from "./Categories/Categories";
 import EmotionButton from "./EmotionButton/EmotionButton";
 import ShareButton from "./ShareButton/ShareButton";
@@ -11,33 +11,31 @@ import Comments from "./Comments/Comments";
 import RecommendedVideos from "./RecommendedVideos/RecommendedVideos";
 import UnSubscribeButton from "../../components/UnSubsribeButton/UnSubscribeButton";
 
-
-
 import "./WatchVideo.css";
 
 export default function WatchVideo() {
-    return (
-        <div className="watchVideo">
-            <div className="watchVideo__videoInfo">
-                <PlayVideo/>
-                <div className="watchVideo__videoInfo__title"> title</div>
-                <div className="watchVideo__videoInfo__interactVideo">
-                    <Channel/>
-                    <EmotionButton/>
-                    <UnSubscribeButton/>
-                    <ShareButton/>
-                    <OptionButton/>
-                </div>
-                <Description/>
-                <Tools/>
-                <AddComment/>
-                <Comments/>
-            </div>
-
-            <div className="watchVideo__recommends">
-                <Categories/>
-                <RecommendedVideos/>
-            </div>
+  return (
+    <div className="watchVideo">
+      <div className="watchVideo__videoInfo">
+        <PlayVideo />
+        <div className="watchVideo__videoInfo__title"> title</div>
+        <div className="watchVideo__videoInfo__interactVideo">
+          <Channel />
+          <EmotionButton />
+          <UnSubscribeButton />
+          <ShareButton />
+          <OptionButton />
         </div>
-    );
+        <Description />
+        <Tools />
+        <AddComment />
+        <Comments />
+      </div>
+
+      <div className="watchVideo__recommends">
+        <Categories />
+        <RecommendedVideos />
+      </div>
+    </div>
+  );
 }

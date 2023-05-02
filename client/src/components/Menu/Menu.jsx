@@ -4,7 +4,6 @@ import "./Menu.css";
 
 import useSideBar from "../../hooks/useSideBar";
 
-import {SignInButton} from "../../features/authentication/SignInButton/SignInButton";
 import MenuItem from "./MenuItem/MenuItem";
 
 export default function Menu() {
@@ -13,7 +12,7 @@ export default function Menu() {
     <div className="sideBar">
       <div className="sideBar__first">
         {items.home.map((item) => (
-          <MenuItem {...item} key ={item.name} />
+          <MenuItem {...item} key={item.name} />
         ))}
       </div>
 
@@ -25,7 +24,7 @@ export default function Menu() {
 
       <div className="sideBar__signIn ">
         <div>Sign in to like videos, comment, and subscribe.</div>
-        <SignInButton />
+        {/* <ChannelFollowing /> */}
       </div>
 
       <div className="sideBar__fourth">

@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/Menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/PlayVideo/PlayVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/PlayVideo/PlayVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/PlayVideo/PlayVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/UnAvailablePage/UnavailablePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/UnAvailablePage/UnavailablePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/SubscribeChannel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/subscribeChannel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/SubscribeChannel/subscribe_channel_slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/subscribeChannel/subscribe_channel_slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/SignInButton/SignInButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/SignInButton/SignInButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/filterVideo/filterVideo_slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/videoFilter/filterVideo_slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/filterVideo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/videoFilter/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/filterVideo/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/videoFilter/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/videos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +92,10 @@
       <workItem from="1682559134227" duration="3066000" />
       <workItem from="1682609409167" duration="4653000" />
       <workItem from="1682655450581" duration="6435000" />
+      <workItem from="1682817433448" duration="10000" />
+      <workItem from="1682818244673" duration="1992000" />
+      <workItem from="1682825543261" duration="30000" />
+      <workItem from="1682825618318" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682134822315</created>
