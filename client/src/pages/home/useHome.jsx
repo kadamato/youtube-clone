@@ -1,12 +1,12 @@
+import { useDispatch } from "react-redux";
+
 import { useState } from "react";
 
 import VideoCategory from "../../components/VideoCategory/VideoCategory";
 import LoadingCategory from "../../components/LoadingCategory/LoadingCategory";
 import StandardVideo from "../../components/StandardVideo/StandardVideo";
-
-import { useDispatch } from "react-redux";
-
 import useVideoFilterFeature from "../../features/videoFilter/useVideoFilter";
+import EmptyList from "../../components/EmptyList/EmptyList";
 
 export default function useHome() {
   const [{ clickCategory, activeCategory }, filterVideoState] =
@@ -37,7 +37,7 @@ export default function useHome() {
 
   const displayVideos = () => {
     return videos.length < 1
-      ? "there aren't any video"
+        ?  <EmptyList/>
       : videos.map((video) => <StandardVideo key={video._id} video={video} />);
   };
 

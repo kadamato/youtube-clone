@@ -5,10 +5,10 @@ import Header from "../../components/Header/Header";
 import Menu from "../../components/Menu/Menu";
 
 import "./MainLayout.css";
-import useChannelFollowing from "../../features/channelFollowing/useChannelFollowing";
+import useChannelFollowing from "../../features/authentication/useChannelFollowing";
 
 export default function MainLayout() {
-  // useChannelFollowing();
+    useChannelFollowing();
   return (
     <>
       <Header />

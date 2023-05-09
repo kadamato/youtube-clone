@@ -5,6 +5,7 @@
     background-color: var(--color-button);
     border-radius: 1rem;
     cursor: pointer;
+    line-height: 1.4;
 }
 
 .description:hover {
@@ -12,6 +13,12 @@
 }
 
 .description__top {
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
+    font-weight: bold;
+}
+
+.description__top__views {
+    margin: 0 1rem 0 0;
 }

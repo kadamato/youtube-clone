@@ -3,8 +3,8 @@
 import passport from "passport";
 import { Strategy } from "passport-google-oauth20";
 
-import config from "./config.js"; // remember must have file .js to access file
-import User from "../src/models/user.js";
+import config from "./config.js";
+import Channel from "../src/models/./channel.js";
 
 const GoogleStrategy = Strategy;
 
@@ -18,10 +18,10 @@ const passportConfig = () => {
       },
 
       async (accessToken, refreshToken, profile, done) => {
-        const user = await User.findOne({ googleId: profile.id });
+        const user = await Channel.findOne({ googleId: profile.id });
         if (!user) {
           // build an user record
-          const createNewUser = new User({
+          const createNewUser = new Channel({
             googleId: profile.id,
             email: profile.emails[0].value,
             avatar: profile.photos[0].value,
@@ -47,7 +47,7 @@ const passportConfig = () => {
 
   //this function get user data base on data saved in session
   passport.deserializeUser(async (googleId, done) => {
-    const userInfo = await User.findOne({ googleId });
+    const userInfo = await Channel.findOne({ googleId });
     done(null, userInfo);
   });
 };

@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import channel from "../controllers/channel.js";
+import subscriber from "../controllers/subscriber.js";
 
 const router = Router();
 
-router.get("/", channel);
+router.get("/", subscriber);
 
 export default router;

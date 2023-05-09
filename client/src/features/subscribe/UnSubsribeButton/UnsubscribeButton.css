@@ -1,0 +1,67 @@
+.unsubscribe {
+    position: relative;
+}
+
+.unsubscribeButton {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-button);
+    border-radius: 30rem;
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.unsubscribeButton:hover {
+    background-color: var(--color--button-active);
+}
+
+.unsubscribe__text {
+    padding: 0 .8rem;
+    font-weight: bold;
+}
+
+.unsubscribe__ringIcon {
+    width: 1.6rem;
+}
+
+.unsubscribe__optionIcon {
+    width: 1.2rem;
+    transform: rotate(90deg);
+}
+
+/* */
+.unsubscribe__options {
+    display: none;
+    width: 20rem;
+    padding: .8rem 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, .1);
+}
+
+.unsubscribe__options > div {
+    display: flex;
+    align-items: center;
+    padding: .8rem 2rem;
+    cursor: pointer;
+}
+
+.unsubscribe__options > div > div {
+    margin: 0 0 0 1.6rem;
+}
+
+.unsubscribe__options > div:hover {
+    background-color: var(--color--button-active);
+}
+
+.options__icon--size {
+    width: 2rem;
+}
+
+.unsubscribe__options--show {
+    display: block;
+}

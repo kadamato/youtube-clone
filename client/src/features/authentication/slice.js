@@ -1,48 +1,73 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { YoutubeClone } from "../../lib/apis";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {UserRequest} from "../../lib/apis";
 
 export const loginRequest = createAsyncThunk(
-  "auth/loginRequest",
-  async (data, thunkAPI) => {
-    try {
-      const resp = await YoutubeClone.get("/auth/login/success", {
-        withCredentials: true,
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Credentials": true,
-        },
-      });
-      if (resp.status === 200) return resp.data.user;
-      throw resp;
-    } catch (err) {
-      throw err;
+    "auth/loginRequest",
+    async (data, thunkAPI) => {
+        try {
+            const resp = await UserRequest("/auth/login/success");
+            if (resp.status === 200) return resp.data.user;
+            throw resp;
+        } catch (err) {
+            throw err;
+        }
     }
-  }
 );
 
+export const channelFollowingRequest = createAsyncThunk(
+    "auth/channelFollowingRequest",
+    async (data, thunkAPI) => {
+        try {
+            const resp = await UserRequest("/subscriber");
+            if (resp.status === 200) return resp.data.channels;
+            throw resp;
+        } catch (err) {
+            throw err;
+        }
+    }
+)
+
 const authSlice = createSlice({
-  name: "auth",
-  initialState: {
-    user: null,
-    loading: true,
-    error: null,
-  },
-  extraReducers: {
-    [loginRequest.pending]: (state, action) => {
-      state.loading = true;
+    name: "auth",
+    initialState: {
+        user: null,
+        loading: true,
+        error: null,
+        channels: [],
+        loadingChannels: true,
+        channelsError: null,
     },
-    [loginRequest.fulfilled]: (state, action) => {
-      state.user = action.payload;
-      state.loading = false;
+    extraReducers: {
+        [loginRequest.pending]: (state, action) => {
+            state.loading = true;
+        },
+        [loginRequest.fulfilled]: (state, action) => {
+            state.user = action.payload;
+            state.loading = false;
+        },
+        [loginRequest.rejected]: (state, action) => {
+            state.error = action.error;
+            state.loading = false;
+        },
+
+        [channelFollowingRequest.pending]: (state, action) => {
+            state.loadingChannels = true;
+        },
+        [channelFollowingRequest.fulfilled]: (state, action) => {
+            state.channels = action.payload;
+            state.loadingChannels = false;
+        },
+        [channelFollowingRequest.rejected]: (state, action) => {
+            state.channelsError = action.error;
+            state.loadingChannels = false;
+        }
     },
-    [loginRequest.rejected]: (state, action) => {
-      state.error = action.error;
-      state.loading = false;
-    },
-  },
+
+
 });
 
 export default authSlice.reducer;
 
 export const authSelector = (state) => state.auth;
+
+

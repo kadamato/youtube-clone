@@ -5,7 +5,6 @@ export const uploadVideo = async (req, res) => {
   // 1.read data body part : data include info about video
   const data = req.body;
 
-  console.log(data);
 
   const uploadVideo = new Video(data);
 

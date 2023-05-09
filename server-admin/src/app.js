@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 
-import { connectDB } from "../config/connectDB";
+import {connectDB} from "../config/connectDB";
 import routes from "./routes/index";
 
 const app = express();
@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(routes);
 
-app.listen(PORT, () => {
-  connectDB();
-  console.log("server is running at address : http://localhost:9999");
+app.listen(PORT, async () => {
+    await connectDB();
+    console.log("server is running at address : http://localhost:9999");
 });

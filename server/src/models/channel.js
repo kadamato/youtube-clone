@@ -1,29 +1,45 @@
-import {mongoose} from "mongoose"
+import mongoose from "mongoose";
 
+// with auth google after get data return server save all info into db
 
-
-
-const channelSchema  = mongoose.Schema({
-    _userId: {
+const channelSchema = new mongoose.Schema(
+  {
+    googleId: {
+      type: String,
       require: true,
-      type:String
     },
-    name : {
-        require: true,
-        type: String
+    email: {
+      type: String,
+      required: true,
     },
-    avatar : {
-        require: true,
-        type: String
+    avatar: {
+      type: String,
+      required: true,
     },
-    url : {
-        require: true,
-        type: String
-    }
-})
 
+    givenName: {
+      type: String,
+      required: true,
+    },
+    familyName: {
+      type: String,
+      required: true,
+    },
+    displayName: {
+      type: String,
+      required: true,
+    },
+    verify: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-const Channel = new mongoose.model('channels' , channelSchema);
+const Channel = mongoose.model("channels", channelSchema);
 
-
-export default  Channel;
+export default Channel;

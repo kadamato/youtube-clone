@@ -1,13 +1,26 @@
 import "./Description.css";
-
-export default function Description() {
+import PropsTypes from "prop-types";
+export default function Description({views, created, description}) {
     return (
         <div className="description">
             <div className="description__top">
-                <div className="description__top__viewers">10N viewers</div>
-                <div className="description__top__time">time passed</div>
+                <div className="description__top__views">{views} views</div>
+                <div className="description__top__time">{created}</div>
             </div>
-            <div className="description__content">display content here ...</div>
+            <div className="description__content">{description}</div>
         </div>
     );
 };
+
+Description.propTypes = {
+    views: PropsTypes.number,
+    created: PropsTypes.string,
+    description: PropsTypes.string,
+
+}
+
+Description.defaultProps = {
+    views: 0,
+    created: "",
+    description: "",
+}

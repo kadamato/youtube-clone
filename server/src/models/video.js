@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const videoSchema = new mongoose.Schema(
   {
-    _userId: {
+    _channelId: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
     },

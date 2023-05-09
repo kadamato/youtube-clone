@@ -1,12 +1,12 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
-import {YoutubeClone} from "../../lib/apis";
+import {ClientRequest} from "../../lib/apis";
 
-//  action creator asynchronous get video by category
+//  action creator asynchronous get watchVideo by category
 const getVideoByCategory = createAsyncThunk(
     "videoFilter/getVideoByCategory",
     async (data, thunkAPI) => {
         try {
-            const resp = await YoutubeClone.get(`videos?${data}`);
+            const resp = await ClientRequest(`videos?${data}`)
             if (resp.status === 200) return resp.data.videos;
             throw resp;
         } catch (err) {

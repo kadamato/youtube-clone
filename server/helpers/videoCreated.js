@@ -1,6 +1,6 @@
 import moment from "moment-timezone";
 
-// current time - created video time = about way is
+// current time - created watchVideo time = about way is
 
 const LIMIT_SECONDS = 60000; // < 60s
 

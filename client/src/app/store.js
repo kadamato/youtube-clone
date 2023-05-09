@@ -1,17 +1,20 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {configureStore} from "@reduxjs/toolkit";
 
 import videoFilterSlice from "../features/videoFilter/filterVideo_slice";
-import subscribeChannelSlice from "../features/subscribeChannel/subscribe_channel_slice";
 import authSlice from "../features/authentication/slice";
-import channelFollowingSlice from "../features/channelFollowing/slice";
+import videoSlice from "../features/watchVideo/slice";
+import subscribeSlice from "../features/subscribe/slice";
+import emotionSlice from "../features/emotion/slice";
 
 const reducer = {
-  videoFilter: videoFilterSlice,
-  subscribeChannel: subscribeChannelSlice,
-  auth: authSlice,
-  channelFollowing: channelFollowingSlice,
+    videoFilter: videoFilterSlice,
+    auth: authSlice,
+    video: videoSlice,
+    subscribe: subscribeSlice,
+    emotion: emotionSlice
 };
 
-const store = configureStore({ reducer });
-
+const store = configureStore({reducer});
 export default store;
+
+

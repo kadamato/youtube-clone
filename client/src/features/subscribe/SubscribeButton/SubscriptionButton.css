@@ -1,0 +1,48 @@
+.subscribe {
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+}
+
+.subscribeButton {
+    padding: 1rem 1.4rem;
+    border-radius: 30rem;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.subscribeButton:hover {
+    opacity: 0.8;
+}
+
+
+.subscribe__nof {
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, .1);
+    color: black;
+    padding: 1rem 1.5rem;
+    line-height: 2.5;
+    display: none;
+}
+
+.subscribe__nof--show {
+    display: block;
+}
+
+
+.subscribeButton__requireLogin__title {
+
+}
+
+.subscribeButton__requireLogin__subtitle {
+    font-size: 1.3rem;
+    color: var(--color-sub-title);
+}

@@ -6,8 +6,11 @@ import useSideBar from "../../hooks/useSideBar";
 
 import MenuItem from "./MenuItem/MenuItem";
 
+import AuthChannel from "../../features/authentication/AuthChannel";
+
 export default function Menu() {
   const { items } = useSideBar();
+
   return (
     <div className="sideBar">
       <div className="sideBar__first">
@@ -23,8 +26,7 @@ export default function Menu() {
       </div>
 
       <div className="sideBar__signIn ">
-        <div>Sign in to like videos, comment, and subscribe.</div>
-        {/* <ChannelFollowing /> */}
+         <AuthChannel />
       </div>
 
       <div className="sideBar__fourth">

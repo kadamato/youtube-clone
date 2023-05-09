@@ -3,13 +3,13 @@ import passport from "passport";
 import jwt from "jsonwebtoken";
 import config from "../../config/config.js";
 import createError from "../../helpers/createError.js";
-import Channel from "../models/channel.js";
+import Channel from "../models/subscriber.js";
 
 const router = Router();
 
 router.get("/login/success", (req, res, next) => {
   try {
-    if (!req.user) return next(createError(401, "User not authenticated"));
+    if (!req.user) return next(createError(401, "Channel not authenticated"));
 
     const { __v, createdAt, updatedAt, googleId, ...others } = req.user._doc;
 

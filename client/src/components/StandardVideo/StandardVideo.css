@@ -1,10 +1,10 @@
 .video {
-  width: 33%;
-  padding: 1.5rem 0.8rem;
+  width: 25%;
   text-transform: capitalize;
   line-height: 1.4;
   cursor: pointer;
   position: relative;
+  padding: 1rem .5rem;
 }
 
 .video__photo {
