@@ -1,0 +1,7 @@
+.editVideo {
+    padding: 1rem 1.5rem;
+    border-radius: 30rem;
+    background-color: var(--color-reply-button);
+    color: white;
+    font-weight: bold;
+}

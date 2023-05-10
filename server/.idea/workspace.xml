@@ -5,66 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/../client/src/features/authentication/AuthChannel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscribeButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/subscribe/UnSubsribeButton/UnSubscribeButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/subscribe/UnSubsribeButton/UnsubscribeButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/subscriber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/watchVideo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/watchVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/public/images/ownerVideo-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/public/images/watchLater-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/features/authentication/AuthVideoFeature.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/features/authentication/VideoFeatureForUser/VideoFeatureForUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EditVideo/EditVideoButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EditVideo/EditVideoButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/objectLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/dislike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/like.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dislike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/like.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/Menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/MenuItem/MenuItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/MenuItem/MenuItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscribeButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscriptionButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/SubscribeButton/SubscriptionButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/UnAvaiableVideo/UnavailableVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/UnAvaiableVideo/UnavailableVideo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/UnSubsribeButton/UnSubscribeButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/UnSubsribeButton/UnsubscribeButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/AuthUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/AuthUser.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/SignInButton/SignInButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/SignInButton/SignInButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/useAuth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/channelFollowing/Channel/Channel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/ChannelFollowing/ChannelFollowing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/channelFollowing/ChannelFollowing.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/channelFollowing/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/channelFollowing/useChannelFollowing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/subscribeChannel/subscribe_channel_slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/subscribeChannel/useSubscribe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/videoFilter/filterVideo_slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/videoFilter/filterVideo_slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/MainLayout/MainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/layouts/VideoDetailLayout/VideoDetailLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/layouts/VideoDetailLayout/VideoDetailLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/lib/apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/lib/apis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/home/useHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/Channel/Channel.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/ChannelOwner/Channel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/Channel/Channel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/ChannelOwner/ChannelOwner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/Description/Description.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/Description/Description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/Description/Description.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/Description/Description.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/Tools/Tools.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/Tools/Tools.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscriptionButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/useWatchVideo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles/variables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-admin/config/connectDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server-admin/config/connectDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-admin/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server-admin/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-admin/src/controllers/videoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server-admin/src/controllers/videoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-admin/src/models/videoModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server-admin/src/models/videoModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/videoCreated.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/videoCreated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/channel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/videos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/channel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/subscriber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/watchVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/watchVideo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +92,7 @@
       <workItem from="1683251724428" duration="2799000" />
       <workItem from="1683289297098" duration="1776000" />
       <workItem from="1683335904633" duration="27538000" />
-      <workItem from="1683450958202" duration="30037000" />
+      <workItem from="1683450958202" duration="44473000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682134822315</created>
@@ -147,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682510273084</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1683609551429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683609551429</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

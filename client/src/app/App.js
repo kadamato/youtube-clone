@@ -19,10 +19,12 @@ export default function App() {
                 <Route path="" element={<Home/>}/>
                 <Route path="short" element={<div> short video </div>}/>
                 <Route path="hashtag/:hashTagName" element={<div> hashtag </div>}/>
+                <Route path="playlist"  element={<div> playlist display here  </div>}/>
             </Route>
             <Route path="/videos" element={<VideoDetailLayout/>}>
                 <Route path="" element={<WatchVideo/>}/>
             </Route>
+
         </Routes>
     );
 }

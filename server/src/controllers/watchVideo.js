@@ -11,6 +11,7 @@ import View from "../models/view.js";
 import createError from "../../helpers/createError.js";
 
 import videoCreatedAbout from "../../helpers/videoCreated.js";
+import convertToString from "../../helpers/convertToString.js";
 
 export const watchVideo = async (req, res, next) => {
     try {
@@ -25,7 +26,7 @@ export const watchVideo = async (req, res, next) => {
         const {__v, updatedAt, createdAt, ...others} = video._doc;
 
         const channel = await Channel.findById(video._channelId);
-        const {avatar, displayName, verify} = channel._doc;
+        const {avatar, displayName, verify, _id} = channel._doc;
 
         const likers = await Like.find({_videoId: video._id});
         const numberLikers = likers.length;
@@ -45,10 +46,13 @@ export const watchVideo = async (req, res, next) => {
 
 
         let isSubscribed = false;
+        let isVideoOwner = false;
         if (req.user) {
             const subscriberId = req.user._id;
             isSubscribed = await Subscriber.findOne({subscriberId, _channelId: channel._id}) ? true : false;
+            isVideoOwner = convertToString(subscriberId) === convertToString(_id);
         }
+
 
         const completeInfo =
             {
@@ -61,7 +65,8 @@ export const watchVideo = async (req, res, next) => {
                 subscribers: numberSubscribers,
                 comments,
                 views: numberViews,
-                isSubscribed
+                isSubscribed,
+                isVideoOwner
             }
 
         return res.status(200).json({video: completeInfo});

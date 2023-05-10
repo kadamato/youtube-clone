@@ -1,6 +1,6 @@
 import PlayVideo from "./PlayVideo/PlayVideo";
 import Categories from "./Categories/Categories";
-import EmotionButton from "./EmotionButton/EmotionButton";
+import EmotionButton from "../../features/emotion/EmotionButton/EmotionButton";
 import ShareButton from "./ShareButton/ShareButton";
 import OptionButton from "./OptionButton/OptionButton";
 import ChannelOwner from "./ChannelOwner/ChannelOwner";
@@ -12,18 +12,21 @@ import RecommendedVideos from "./RecommendedVideos/RecommendedVideos";
 
 import "./WatchVideo.css";
 import useVideoState from "../../features/watchVideo/useVideoState";
+import useSubscribeState from "../../features/subscribe/useSubscribeState";
 
 export default function WatchVideo() {
     const {video} = useVideoState();
+    const  {subscribers } = useSubscribeState();
+    console.log(subscribers)
     return (
-        <div className="watchVideo" >
+        <div className="watchVideo">
             <div className="watchVideo__videoInfo">
                 <PlayVideo/>
                 <div className="watchVideo__videoInfo__title"> {video?.title} </div>
                 <div className="watchVideo__videoInfo__interactVideo">
                     <ChannelOwner avatar={video.avatar} displayName={video.displayName}
-                                  subscribers={video.subscribers}/>
-                    <EmotionButton likers={video.likers}/>
+                                  subscribers={subscribers}/>
+                    <EmotionButton/>
                     <ShareButton/>
                     <OptionButton/>
                 </div>
