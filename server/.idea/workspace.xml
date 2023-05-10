@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/like.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/like.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/subscribed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/watchVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/watchVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/subscriber.js" afterDir="false" />
-    </list>
+    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +31,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/ART/WebstormProjects/youtube-clone/server-admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -102,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683609551429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1683744638865</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683744638865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
