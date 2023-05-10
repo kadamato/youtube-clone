@@ -24,8 +24,8 @@ router.use("/watchVideo", watchVideo);
 // hashtag
 router.use("/hashtag", hashtagRoute);
 
-//subscriber
-router.use("/subscriber", channel);
+//subscribed
+router.use("/subscribed", channel);
 
 // subscribe
 router.use("/subscribe" , subscribe);

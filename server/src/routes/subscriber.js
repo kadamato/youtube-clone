@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import subscriber from "../controllers/subscriber.js";
+import subscribed from "../controllers/subscribed.js";
 
 const router = Router();
 
-router.get("/", subscriber);
+router.get("/", subscribed);
 
 export default router;

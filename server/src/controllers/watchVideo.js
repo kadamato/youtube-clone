@@ -1,12 +1,11 @@
 import Channel from "../models/./channel.js";
 import Video from "../models/video.js";
-
 import Like from "../models/like.js";
 import LikeComment from "../models/comment_like.js";
 import ReplyComment from "../models/comment_reply.js";
-import Subscriber from "../models/subscriber.js";
 import Comment from "../models/comment.js";
 import View from "../models/view.js";
+import ChannelSubscribed from "../models/channel_subscribed.js";
 
 import createError from "../../helpers/createError.js";
 
@@ -26,12 +25,12 @@ export const watchVideo = async (req, res, next) => {
         const {__v, updatedAt, createdAt, ...others} = video._doc;
 
         const channel = await Channel.findById(video._channelId);
-        const {avatar, displayName, verify, _id} = channel._doc;
+        const {avatar, displayName, verify} = channel._doc;
 
         const likers = await Like.find({_videoId: video._id});
         const numberLikers = likers.length;
 
-        const subscribers = await Subscriber.find({_channelId: channel._id});
+        const subscribers = await ChannelSubscribed.find({channel_subscribed : channel._id});
         const numberSubscribers = subscribers.length;
 
 
@@ -47,10 +46,11 @@ export const watchVideo = async (req, res, next) => {
 
         let isSubscribed = false;
         let isVideoOwner = false;
+
         if (req.user) {
-            const subscriberId = req.user._id;
-            isSubscribed = await Subscriber.findOne({subscriberId, _channelId: channel._id}) ? true : false;
-            isVideoOwner = convertToString(subscriberId) === convertToString(_id);
+            const channelId =  req.user._id;
+            isSubscribed = await ChannelSubscribed.findOne({_channelId:channelId , channel_subscribed : channel._id }) ? true : false;
+            isVideoOwner = convertToString(channelId) === convertToString(channel._id);
         }
 
 

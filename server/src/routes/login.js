@@ -1,9 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
-import jwt from "jsonwebtoken";
-import config from "../../config/config.js";
 import createError from "../../helpers/createError.js";
-import Channel from "../models/subscriber.js";
 
 const router = Router();
 

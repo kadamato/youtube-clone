@@ -7,29 +7,28 @@ export default async function like(req, res, next) {
     try {
         if (!req.user) return next(createError(401, "user is not authorized"));
 
-        const subscriberId = convertToString(req.user._id);
+        const channelId = convertToString(req.user._id);
         const videoId = req.body.videoId;
 
-        const isLikedVideo = await Like.findOne({_videoId: videoId, subscriberId});
+        const isLikedVideo = await Like.findOne({_videoId: videoId, channelId});
 
         let numberLikes;
 
         if (!isLikedVideo) {
             const newLiker = await Like({
                 _videoId: videoId,
-                subscriberId,
+                channelId,
             });
 
             await newLiker.save();
 
             const likes = await Like.find({_videoId: videoId});
-
             numberLikes = likes.length;
 
             return res.status(200).json({msg: "success", status: 200, likes: numberLikes});
         }
 
-        const cancelLike = await Like.findOneAndDelete({_videoId: videoId, subscriberId});
+        const cancelLike = await Like.findOneAndDelete({_videoId: videoId, channelId});
 
         const likes = await Like.find({_videoId: videoId});
         numberLikes =  likes.length;

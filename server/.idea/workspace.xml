@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/../client/public/images/ownerVideo-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/public/images/watchLater-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/authentication/AuthVideoFeature.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/authentication/VideoFeatureForUser/VideoFeatureForUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EditVideo/EditVideoButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/EditVideo/EditVideoButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/objectLength.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/dislike.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/like.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dislike.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/like.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/StandardVideo/StandardVideo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscriptionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/subscribe/SubscribeButton/SubscriptionButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/EmotionButton/EmotionButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
+    <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/authentication/slice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/like.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/like.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/subscribed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/watchVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/watchVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/subscriber.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "last_opened_file_path": "C:/Users/ART/WebstormProjects/youtube-clone/server-admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

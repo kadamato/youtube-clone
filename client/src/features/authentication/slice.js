@@ -18,7 +18,7 @@ export const channelFollowingRequest = createAsyncThunk(
     "auth/channelFollowingRequest",
     async (data, thunkAPI) => {
         try {
-            const resp = await UserRequest("/subscriber");
+            const resp = await UserRequest("/subscribed");
             if (resp.status === 200) return resp.data.channels;
             throw resp;
         } catch (err) {
