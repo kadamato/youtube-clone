@@ -17,7 +17,6 @@ import useSubscribeState from "../../features/subscribe/useSubscribeState";
 export default function WatchVideo() {
     const {video} = useVideoState();
     const  {subscribers } = useSubscribeState();
-    console.log(subscribers)
     return (
         <div className="watchVideo">
             <div className="watchVideo__videoInfo">

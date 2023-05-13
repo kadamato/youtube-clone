@@ -15,7 +15,7 @@ export default async function like(req, res, next) {
         let numberLikes;
 
         if (!isLikedVideo) {
-            const newLiker = await Like({
+            const newLiker =  new  Like({
                 _videoId: videoId,
                 channelId,
             });

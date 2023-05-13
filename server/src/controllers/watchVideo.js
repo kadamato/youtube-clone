@@ -1,11 +1,13 @@
 import Channel from "../models/./channel.js";
 import Video from "../models/video.js";
-import Like from "../models/like.js";
 import LikeComment from "../models/comment_like.js";
 import ReplyComment from "../models/comment_reply.js";
 import Comment from "../models/comment.js";
 import View from "../models/view.js";
 import ChannelSubscribed from "../models/channel_subscribed.js";
+import Like from "../models/like.js";
+import Dislike from "../models/dislike.js";
+
 
 import createError from "../../helpers/createError.js";
 
@@ -46,11 +48,19 @@ export const watchVideo = async (req, res, next) => {
 
         let isSubscribed = false;
         let isVideoOwner = false;
+        let isLikedVideo = false;
+        let isDislikedVideo = false;
+
 
         if (req.user) {
             const channelId =  req.user._id;
             isSubscribed = await ChannelSubscribed.findOne({_channelId:channelId , channel_subscribed : channel._id }) ? true : false;
             isVideoOwner = convertToString(channelId) === convertToString(channel._id);
+
+            isLikedVideo =  await Like.findOne({_videoId: video._id, channelId}) ? true : false;
+
+            isDislikedVideo = await Dislike.findOne({_videoId: video._id , channelId}) ? true : false;
+
         }
 
 
@@ -66,7 +76,9 @@ export const watchVideo = async (req, res, next) => {
                 comments,
                 views: numberViews,
                 isSubscribed,
-                isVideoOwner
+                isVideoOwner,
+                isLikedVideo,
+                isDislikedVideo
             }
 
         return res.status(200).json({video: completeInfo});

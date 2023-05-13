@@ -7,14 +7,13 @@ import SignInButtonV2 from "../../authentication/SignInButtonV2/SignInButtonV2";
 export default function EmotionButton() {
     const {likeVideo, dislikeVideo} = useEmotion();
     const {video: {_id}} = useVideoState();
-    const {onLikeButton, onDislikeButton, likes} = useEmotionState();
+    const {onLikeButton, onDislikeButton, likes , activeLike, activeDislike} = useEmotionState();
 
-    console.log(likes);
     return (
         <div className="emotionButton">
             <div className="emotionButton__like" onClick={() => likeVideo(_id)}>
                 <div className="emotionButton__like__icon">
-                    <img src="/images/like-icon.svg" alt="like icon"/>
+                    <img src={`/images/${activeLike ? "likeBold-icon.svg" : "like-icon.svg"}`} alt="like icon"/>
                 </div>
                 <div className="emotionButton__like__likers">{likes}</div>
 
@@ -26,7 +25,7 @@ export default function EmotionButton() {
             </div>
             <div className="emotionButton__dislike" onClick={() => dislikeVideo(_id)}>
                 <div className="emotionButton__dislike__icon">
-                    <img src="/images/dislike-icon.svg" alt="dislike icon"/>
+                    <img src={`/images/${ activeDislike ? "dislikeBold-icon.svg" :"dislike-icon.svg"}`} alt="dislike icon"/>
                 </div>
 
                 <div className={`nofSignIn ${onDislikeButton ? "nofSignIn__dislike--open" : ""}`}>
