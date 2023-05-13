@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc586c4b-da73-4e10-8f68-b4428e48e01a" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/../client/public/images/dislikeBold-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/public/images/likeBold-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/addComment/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/features/emotion/dislikeSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/features/emotion/EmotionButton/EmotionButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/watchVideo/WatchVideo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/dislike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/dislike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/like.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/like.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/watchVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/watchVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +73,7 @@
       <workItem from="1683289297098" duration="1776000" />
       <workItem from="1683335904633" duration="27538000" />
       <workItem from="1683450958202" duration="44473000" />
-      <workItem from="1683855741292" duration="6408000" />
+      <workItem from="1683855741292" duration="6895000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682134822315</created>

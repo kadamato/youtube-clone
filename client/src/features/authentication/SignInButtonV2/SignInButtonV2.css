@@ -1,0 +1,8 @@
+.subButtonv2 {
+    color: rgb(6, 95, 212);
+    display: inline-flex;
+}
+
+.subButtonv2:hover {
+    border-radius: 30rem;
+}

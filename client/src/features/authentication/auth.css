@@ -1,0 +1,21 @@
+/* is login*/
+
+.menu__subChannel {
+}
+
+.menu__subChannel__name {
+    padding: 0 0 1rem .8rem;
+    font-size: 1.5rem;
+}
+
+/* is not login */
+
+.menu_signIn {
+    padding: 0  0 0 1.5rem;
+}
+
+.menu_signIn__text {
+    padding: 0 0 1.2rem 0 ;
+    font-size: 1.3rem;
+    text-transform: none;
+}
